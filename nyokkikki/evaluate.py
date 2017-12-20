@@ -49,11 +49,11 @@ def evaluate(nPlayer, proc):
             y = float(xyz.split(' ')[1])
             theta = numpy.rad2deg(numpy.arctan2(y, x))
             # speaker(No.0) (-30 : 30)
-            # No.1           (30 : 90)
-            # No.2           (90 : 150)
-            # No.3           (150 : 180), (-150 : -180)
-            # No.4           (-90 : -150)
-            # No.5           (-30 : -90)
+            # No.1           (-90 : -30)
+            # No.2           (-150 : -90)
+            # No.3           (-180 : -150), (150 : 180)
+            # No.4           (90 : 150)
+            # No.5           (30 : 90)
             if -90.0 < theta <= -30.0:
                 player = 1
             elif -150.0 < theta <= -90.0:
